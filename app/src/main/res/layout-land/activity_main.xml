@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/showValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/showResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        android:useDefaultMargins="true">
+        
+        <Button
+            android:id="@+id/delete"
+            style="@style/DeleteLandscape"
+            android:layout_rowSpan="4"
+            android:text="C" />
+
+
+        <Button
+            android:id="@+id/b1"
+            style="@style/ButtonStyle"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b2"
+            style="@style/ButtonStyle"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            style="@style/ButtonStyle"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/ButtonStyle"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/b4"
+            style="@style/ButtonStyle"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            style="@style/ButtonStyle"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b6"
+            style="@style/ButtonStyle"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/ButtonStyle"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/b7"
+            style="@style/ButtonStyle"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b8"
+            style="@style/ButtonStyle"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b9"
+            style="@style/ButtonStyle"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/subtract"
+            style="@style/ButtonStyle"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/bpoint"
+            style="@style/ButtonStyle"
+            android:text="." />
+
+        <Button
+            android:id="@+id/b0"
+            style="@style/ButtonStyle"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/ButtonStyle"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/add"
+            style="@style/ButtonStyle"
+            android:text="+" />
+
+    </GridLayout>
+
+</LinearLayout>
